@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* IMAGEM DE FUNDO */
+body{
+    height: 100vh;
+    background-image: url("img/WhatsApp Image 2025-07-07 at 14.17.34.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CAIXA LOGIN */
+form{
+    width: 320px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+}
+
+/* TÍTULO */
+h1{
+    margin-bottom: 20px;
+}
+
+/* INPUTS */
+input{
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+}
+
+/* BOTÃO */
+button{
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: white;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover{
+    background: #009acd;
+}
+
+/* LINKS */
+a#esquecisenha{
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+#cadastro{
+    color: white;
+}
+
+.cadastro:hover{
+    color: red;
+}
+
+p{
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+</style>
+</head>
+
+<body>
+
+<form>
+    <h1>Login</h1>
+
+    <input type="email" placeholder="Email" required>
+    <input type="password" placeholder="Senha" required>
+
+    <p><a id="esquecisenha" href="#">Esqueci minha senha</a></p>
+
+    <button type="submit">Entrar</button>
+
+    <p>Não tem conta? <a id="cadastro" class="cadastro" href="#">Cadastre-se</a></p>
+</form>
+
+</body>
+</html>
